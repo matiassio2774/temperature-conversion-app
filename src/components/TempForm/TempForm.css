@@ -1,0 +1,140 @@
+label {
+  font-size: 0.85em;
+}
+
+.error {
+  color: red;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  align-self: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+select, input {
+  background-color: rgb(224, 223, 223);
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 0.88em;
+}
+
+.form {
+  display:grid;
+  grid-template-columns: 120px 200px auto;
+  grid-template-rows: auto auto 40px auto 20px;
+  row-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.form-container{
+  background-color: white;
+  max-width: 500px;
+  padding: 20px 50px 45px;
+  margin-bottom: 200px;
+  border: 0;
+  border-radius: 2px;
+}
+
+.temp-result{
+  padding: 0;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  color:rgb(26, 36, 168);
+  font-weight: bold;
+}
+
+#labeltemp {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  align-self: flex-end;
+}
+#temp-input{
+  width: 96%;
+  height: 20px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+#labelfrom{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  padding-top: 10px;
+}
+#from-input{
+  max-width:95%;
+  height: 27px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  align-self: start;
+}
+
+#labelto{
+  padding-top: 5px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#to-input{
+  max-width:55%;
+  height: 27px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  align-self: start;
+
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color:white;
+  background-color: rgb(28, 90, 223);
+  border-radius: 5px;
+  align-self: start;
+}
+
+@media (max-width: 525px) {
+  .form {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto 40px auto 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .form {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto 40px 20px auto;
+  }
+  .btn {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    align-self: center;
+  }
+  .form-container{
+    padding: 20px 50px 20px;
+  }
+  .temp-result{
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+}
+
+@media (max-width: 330px) {
+  .form-container{
+    width: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  .form-container{
+    width: 150px;
+  }
+}
